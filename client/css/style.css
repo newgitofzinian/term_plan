@@ -1,0 +1,28 @@
+/* 清除间隙 */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* 满屏显示 */
+#terminal-container {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+    /* width: 100%; */
+    display:block;  
+    width: calc(100%-1px);
+    height: calc(100%-19px);
+}
+
+#terminal-container .terminal {
+    background-color: #000;
+    color:#fafafa;
+    padding: 2px;
+    height: calc(100%-19px);
+}
+
+#terminal-container .terminal:focus .terminal-cursor{
+    background-color: #fafafa;
+}
